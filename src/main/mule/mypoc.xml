@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="mypocFlow" doc:id="854b013e-4b12-4768-b929-c33525691d60" >
 		<http:listener doc:name="Listener" doc:id="dce069f2-7e30-4595-a582-b4e7ff814410" config-ref="HTTP_Listener_config" path="/test"/>
-		<set-payload value='"BHOLA"' doc:name="Set Payload" doc:id="a12e9047-1555-40a8-99e9-caa7654a084c" />
+		<set-payload value='"my frnd kishore"' doc:name="Set Payload" doc:id="a12e9047-1555-40a8-99e9-caa7654a084c" />
 		<logger level="INFO" doc:name="Logger" doc:id="6fd0f047-01b5-4957-b07b-79d4da04b92f" message="#[payload]"/>
 	</flow>
 </mule>
